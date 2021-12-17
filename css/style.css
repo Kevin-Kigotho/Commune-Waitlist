@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --main-color: #2a3f8b;
+    --header-bg: #e6faff;
+    --text-color-main: #353d7a;
+    --text-color-sub: #666;
+    --padding:  5rem 9%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: var(--header-bg);
+    margin: 10px;
+    border-radius: .5rem;
+    /* width: 100%; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 9%;
+    font-size: 1.7rem;
+}
+
+.navbar .navbar__links a {
+    margin: 0 1rem;
+    color: var(--text-color-main);
+}
+
+.navbar .navbar__links a.btn {
+    color: #fff;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: .4rem;
+}
+
+.hero {
+    /* position: relative; */
+    display: flex;
+    padding: 3.5rem 9%;
+    /* border: 2px red solid; */
+}
+
+.hero-img {
+    /* position: absolute;
+    right: 0;
+    top: 0;
+    
+    transform: scale(.3); */
+    /* border: 2px red solid; */
+    max-height: 30.8rem;
+    width: 60%;
+}
+
+.hero-img img {
+    max-height: 30.8rem;
+    width: 100%;
+}
+
+.intro-text {
+    background-color: var(--main-color);
+    display: inline-block;
+    color: #ffffffb3;
+    padding: .5rem 2rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+
+.intro-text a {
+    color: #ffffffb3;
+    text-decoration: underline;
+}
+
+.hero-text__banner {
+    padding-right: 15rem;
+}
+
+.hero-text__banner h1 {
+    font-size: 4.5rem;
+}
+
+.hero-text__banner form {
+    margin-top: 2rem;
+}
+
+.hero-text__banner form input[type=email] {
+    padding: 1.5rem 1rem 1.5rem 2rem;
+    width: 30rem;
+    border: .1rem solid #ebebeb;
+    border-radius: .4rem;
+    margin-right: 1rem;
+    color: var(--text-color-sub);
+}
+
+.hero-text__banner form input[type=submit] {
+    cursor: pointer;
+}
+
+.icons {
+    padding: 3.5rem 9%;
+}
+
+.icons p {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.icons .icons__wrapper{
+    display: flex;
+}
+
+.icons .icon:not(:first-child) {
+    margin-left: 1.4rem;
+}
+
+@media (max-width: 850px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .menu-bar {
+        display: inline-block;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .hero-text__banner {
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero-text__banner  h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text__banner form input[type = email] {
+        margin-bottom: 1rem;
+    }
+
+    .hero-text__banner form input[type = email],
+    .hero-text__banner form input[type = submit] {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-img {
+        display: none;
+    }
+}
